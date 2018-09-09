@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="learnjava" default="all">
+  
+  
+  <property file="FlumeSink2DB.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="700m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/*.rbc/**"/>
+    <exclude name="**/*.yarb/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/vssver.scc/**"/>
+    <exclude name="**/vssver2.scc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.egg"/>
+    <include name="*.jar"/>
+    <include name="*.ear"/>
+    <include name="*.swc"/>
+    <include name="*.war"/>
+    <include name="*.zip"/>
+    <include name="*.ane"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <exclude name="**/?*.java"/>
+    <exclude name="**/?*.form"/>
+    <exclude name="**/?*.class"/>
+    <exclude name="**/?*.groovy"/>
+    <exclude name="**/?*.scala"/>
+    <exclude name="**/?*.flex"/>
+    <exclude name="**/?*.kt"/>
+    <exclude name="**/?*.clj"/>
+    <exclude name="**/?*.aj"/>
+  </patternset>
+  
+  <!-- JDK definitions -->
+  
+  <property name="jdk.bin.1.8" value="${jdk.home.1.8}/bin"/>
+  <path id="jdk.classpath.1.8">
+    <fileset dir="${jdk.home.1.8}">
+      <include name="jre/lib/charsets.jar"/>
+      <include name="jre/lib/deploy.jar"/>
+      <include name="jre/lib/ext/access-bridge-64.jar"/>
+      <include name="jre/lib/ext/cldrdata.jar"/>
+      <include name="jre/lib/ext/dnsns.jar"/>
+      <include name="jre/lib/ext/jaccess.jar"/>
+      <include name="jre/lib/ext/jfxrt.jar"/>
+      <include name="jre/lib/ext/localedata.jar"/>
+      <include name="jre/lib/ext/nashorn.jar"/>
+      <include name="jre/lib/ext/sunec.jar"/>
+      <include name="jre/lib/ext/sunjce_provider.jar"/>
+      <include name="jre/lib/ext/sunmscapi.jar"/>
+      <include name="jre/lib/ext/sunpkcs11.jar"/>
+      <include name="jre/lib/ext/zipfs.jar"/>
+      <include name="jre/lib/javaws.jar"/>
+      <include name="jre/lib/jce.jar"/>
+      <include name="jre/lib/jfr.jar"/>
+      <include name="jre/lib/jfxswt.jar"/>
+      <include name="jre/lib/jsse.jar"/>
+      <include name="jre/lib/management-agent.jar"/>
+      <include name="jre/lib/plugin.jar"/>
+      <include name="jre/lib/resources.jar"/>
+      <include name="jre/lib/rt.jar"/>
+    </fileset>
+  </path>
+  
+  <property name="project.jdk.home" value="${jdk.home.1.8}"/>
+  <property name="project.jdk.bin" value="${jdk.bin.1.8}"/>
+  <property name="project.jdk.classpath" value="jdk.classpath.1.8"/>
+  
+  
+  <!-- Project Libraries -->
+  
+  <path id="library.gradle:_com.google.code.findbugs:jsr305:1.3.9.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar"/>
+  </path>
+  
+  <path id="library.gradle:_com.google.code.gson:gson:2.2.2.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.2/1f96456ca233dec780aa224bff076d8e8bca3908/gson-2.2.2.jar"/>
+  </path>
+  
+  <path id="library.gradle:_com.google.guava:guava:11.0.2.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/11.0.2/35a3c69e19d72743cac83778aecbee68680f63eb/guava-11.0.2.jar"/>
+  </path>
+  
+  <path id="library.gradle:_com.thoughtworks.paranamer:paranamer:2.3.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/com.thoughtworks.paranamer/paranamer/2.3/4a85963a752c0a2f715c3924bfc686865e7e1bc6/paranamer-2.3.jar"/>
+  </path>
+  
+  <path id="library.gradle:_commons-cli:commons-cli:1.2.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar"/>
+  </path>
+  
+  <path id="library.gradle:_commons-codec:commons-codec:1.9.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/9ce04e34240f674bc72680f8b843b1457383161a/commons-codec-1.9.jar"/>
+  </path>
+  
+  <path id="library.gradle:_commons-collections:commons-collections:3.2.1.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.1/761ea405b9b37ced573d2df0d1e3a4e0f9edc668/commons-collections-3.2.1.jar"/>
+  </path>
+  
+  <path id="library.gradle:_commons-io:commons-io:2.1.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.1/fd51f906669f49a4ffd06650666c3b8147a6106e/commons-io-2.1.jar"/>
+  </path>
+  
+  <path id="library.gradle:_commons-lang:commons-lang:2.5.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.5/b0236b252e86419eef20c31a44579d2aee2f0a69/commons-lang-2.5.jar"/>
+  </path>
+  
+  <path id="library.gradle:_commons-logging:commons-logging:1.2.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar"/>
+  </path>
+  
+  <path id="library.gradle:_io.netty:netty:3.9.4.final.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/io.netty/netty/3.9.4.Final/678200bda583ff36d796455c2bdcdd434897115b/netty-3.9.4.Final.jar"/>
+  </path>
+  
+  <path id="library.gradle:_joda-time:joda-time:2.9.9.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.9/f7b520c458572890807d143670c9b24f4de90897/joda-time-2.9.9.jar"/>
+  </path>
+  
+  <path id="library.gradle:_junit:junit:4.12.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar"/>
+  </path>
+  
+  <path id="library.gradle:_log4j:log4j:1.2.17.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar"/>
+  </path>
+  
+  <path id="library.gradle:_mysql:mysql-connector-java:.classpath">
+    <pathelement location="${basedir}/Could not find mysql:mysql-connector-java:."/>
+  </path>
+  
+  <path id="library.gradle:_org.apache.avro:avro-ipc:1.7.4.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.apache.avro/avro-ipc/1.7.4/d2c8777ef5c6c4bf0897dacbda94218e7b4e0167/avro-ipc-1.7.4.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.apache.avro:avro:1.7.4.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.apache.avro/avro/1.7.4/416e7030879814f52845b97f04bb50ecd1cef372/avro-1.7.4.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.apache.commons:commons-compress:1.4.1.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.4.1/b02e84a993d88568417536240e970c4b809126fd/commons-compress-1.4.1.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.apache.flume:flume-ng-auth:1.8.0.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.apache.flume/flume-ng-auth/1.8.0/37522eb95cadc09c18f97c722cacb8175206f920/flume-ng-auth-1.8.0.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.apache.flume:flume-ng-configuration:1.8.0.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.apache.flume/flume-ng-configuration/1.8.0/1e7bec567020d5083aff542ef30793f3ae1a3701/flume-ng-configuration-1.8.0.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.apache.flume:flume-ng-core:1.8.0.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.apache.flume/flume-ng-core/1.8.0/ccab1fa32676d385e6d9a869b6bba85a092fbb89/flume-ng-core-1.8.0.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.apache.flume:flume-ng-sdk:1.8.0.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.apache.flume/flume-ng-sdk/1.8.0/6df35cccd56ab907b3b5e83d7db79f735699547f/flume-ng-sdk-1.8.0.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.apache.httpcomponents:httpclient:4.4.1.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.4.1/16d0bc512222f1253ee6b64d389c84e22f697f0/httpclient-4.4.1.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.apache.httpcomponents:httpcore:4.4.1.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.1/f5aa318bda4c6c8d688c9d00b90681dcd82ce636/httpcore-4.4.1.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.apache.mina:mina-core:2.0.4.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.apache.mina/mina-core/2.0.4/7fdb2aabfa2c942c2853158864abdebf27dc1003/mina-core-2.0.4.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.apache.thrift:libthrift:0.9.3.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.apache.thrift/libthrift/0.9.3/8625e8f9b6f49b881fa5fd143172c2833df1ce47/libthrift-0.9.3.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.apache.velocity:velocity:1.7.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.apache.velocity/velocity/1.7/2ceb567b8f3f21118ecdec129fe1271dbc09aa7a/velocity-1.7.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.codehaus.jackson:jackson-core-asl:1.8.8.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.8.8/dd2e90bb710ea3bc4610e24299d6a4c8dac5049b/jackson-core-asl-1.8.8.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.codehaus.jackson:jackson-mapper-asl:1.8.8.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-asl/1.8.8/1bb32d9d2527c083a56e234acca49a48d3c65c8/jackson-mapper-asl-1.8.8.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.hamcrest:hamcrest-core:1.3.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.mariadb.jdbc:mariadb-java-client:2.1.0.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.mariadb.jdbc/mariadb-java-client/2.1.0/639be502c0d191e1cc21e4e86d388486358fddf8/mariadb-java-client-2.1.0.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.mortbay.jetty:jetty-util:6.1.26.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jetty-util/6.1.26/e5642fe0399814e1687d55a3862aa5a3417226a9/jetty-util-6.1.26.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.mortbay.jetty:jetty:6.1.26.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jetty/6.1.26/2f546e289fddd5b1fab1d4199fbb6e9ef43ee4b0/jetty-6.1.26.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.mortbay.jetty:servlet-api:2.5-20110124.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/servlet-api/2.5-20110124/4154ee504125129d6a9fc0bd54e9657c636c0f31/servlet-api-2.5-20110124.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.slf4j:slf4j-api:1.7.12.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.12/8e20852d05222dc286bf1c71d78d0531e177c317/slf4j-api-1.7.12.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.slf4j:slf4j-log4j12:1.6.1.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.6.1/bd245d6746cdd4e6203e976e21d597a46f115802/slf4j-log4j12-1.6.1.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.tukaani:xz:1.0.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.tukaani/xz/1.0/ecff5cb8b1189514c9d1d8d68eb77ac372e000c9/xz-1.0.jar"/>
+  </path>
+  
+  <path id="library.gradle:_org.xerial.snappy:snappy-java:1.0.4.1.classpath">
+    <pathelement location="C:/Users/wanpg/.gradle/caches/modules-2/files-2.1/org.xerial.snappy/snappy-java/1.0.4.1/f88b89a5a21a466aeb0ecf0c063605bd584b4947/snappy-java-1.0.4.1.jar"/>
+  </path>
+  <!-- Register Custom Compiler Taskdefs -->
+  <property name="javac2.home" value="${idea.home}/lib"/>
+  <path id="javac2.classpath">
+    <fileset dir="${javac2.home}">
+      <include name="javac2.jar"/>
+      <include name="jdom.jar"/>
+      <include name="asm-all*.jar"/>
+      <include name="jgoodies-forms.jar"/>
+    </fileset>
+  </path>
+  <target name="register.custom.compilers">
+    <taskdef name="javac2" classname="com.intellij.ant.Javac2" classpathref="javac2.classpath"/>
+    <taskdef name="instrumentIdeaExtensions" classname="com.intellij.ant.InstrumentIdeaExtensions" classpathref="javac2.classpath"/>
+  </target>
+  
+  <!-- Modules -->
+  
+  <import file="${basedir}/.idea/modules/module_learning-learnjava_main.xml"/>
+  
+  <import file="${basedir}/.idea/modules/module_learning-learnjava_test.xml"/>
+  
+  <import file="${basedir}/.idea/modules/module_learnjava.xml"/>
+  
+  <import file="${basedir}/.idea/modules/module_learnjava_main.xml"/>
+  
+  <import file="${basedir}/.idea/modules/module_learnjava_test.xml"/>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.learning-learnjava_main, clean.module.learning-learnjava_test, clean.module.learnjava, clean.module.learnjava_main, clean.module.learnjava_test" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.learning-learnjava_main, compile.module.learning-learnjava_test, compile.module.learnjava, compile.module.learnjava_main, compile.module.learnjava_test" description="build all modules"/>
+  
+  <target name="all" depends="build.modules" description="build all"/>
+</project>

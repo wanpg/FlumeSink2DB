@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FlumeSink2DB:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FlumeSink2DB_jar</output-path>
+    <root id="archive" name="FlumeSink2DB.jar">
+      <element id="module-output" name="FlumeSink2DB_main" />
+    </root>
+  </artifact>
+</component>

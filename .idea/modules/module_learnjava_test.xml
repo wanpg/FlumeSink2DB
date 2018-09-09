@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_learnjava_test" default="compile.module.learnjava_test">
+  <dirname property="module.learnjava_test.basedir" file="${ant.file.module_learnjava_test}"/>
+  
+  <property name="module.jdk.home.learnjava_test" value=""/>
+  <property name="module.jdk.bin.learnjava_test" value=""/>
+  <property name="module.jdk.classpath.learnjava_test" value=""/>
+  
+  <property name="compiler.args.learnjava_test" value="-encoding UTF-8 -source 8 -target 1.8 ${compiler.args}"/>
+  
+  <property name="learnjava_test.output.dir" value="${module.learnjava_test.basedir}/../../out/production/learnjava_test"/>
+  <property name="learnjava_test.testoutput.dir" value="${module.learnjava_test.basedir}/../../out/test/learnjava_test"/>
+  
+  <path id="learnjava_test.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="learnjava_test.module.production.classpath"/>
+  
+  <path id="learnjava_test.runtime.production.module.classpath">
+    <pathelement location="${learnjava_test.output.dir}"/>
+  </path>
+  
+  <path id="learnjava_test.module.classpath">
+    <pathelement location="${learnjava_test.output.dir}"/>
+  </path>
+  
+  <path id="learnjava_test.runtime.module.classpath">
+    <pathelement location="${learnjava_test.testoutput.dir}"/>
+    <pathelement location="${learnjava_test.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.learnjava_test">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.learnjava_test">
+    <patternset refid="excluded.from.module.learnjava_test"/>
+  </patternset>
+  
+  
+  <target name="compile.module.learnjava_test" depends="compile.module.learnjava_test.production,compile.module.learnjava_test.tests" description="Compile module learnjava_test"/>
+  
+  <target name="compile.module.learnjava_test.production" depends="register.custom.compilers" description="Compile module learnjava_test; production classes"/>
+  
+  <target name="compile.module.learnjava_test.tests" depends="register.custom.compilers,compile.module.learnjava_test.production" description="compile module learnjava_test; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.learnjava_test" description="cleanup module">
+    <delete dir="${learnjava_test.output.dir}"/>
+    <delete dir="${learnjava_test.testoutput.dir}"/>
+  </target>
+</project>
