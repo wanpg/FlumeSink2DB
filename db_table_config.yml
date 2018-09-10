@@ -1,0 +1,20 @@
+tableConfig:
+    - tableName: mysqltest
+      columns:
+          - name: content
+            type: string
+
+          - name: create_by
+            type: string
+
+    - tableName: mysqltest-user
+      columns:
+          - name: id
+            type: string
+
+          - name: name
+            type: string
+
+          - name: phone
+            type: string
+
