@@ -2,10 +2,10 @@
 利用 Flume Sink 使用一个jar包写入多张表
 
 #### 说明
-1. 配置`mysqlSink.conf`到flume的conf目录，配置里面mysqlsink的相应字段，名字可以改
+1. 配置`FlumeSink2DB.conf`到flume的conf目录，配置里面FlumeSink2DB的相应字段，名字可以改
 1. 调用下面的指令启动flume
     ```bash
-     flume-ng  agent -conf ../conf  -conf-file ../conf/mysqlSink.conf  -name agent1  -property flume.root.logger=INFO,console
+     flume-ng  agent -conf-file ../conf/FlumeSink2DB.conf  -name agent1  -property flume.root.logger=INFO,console
     ```
 1. MySqlSink在启动，会到配置agent1.sinks.mysqlSink.tableConfig指向的文件读取配置，可以改为网络访问
 
