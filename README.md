@@ -15,14 +15,13 @@
 
 3. 在process中，根据每一行传入的数据进行判断使用哪个表的`PreparedStatement`
 
-   > 由于来的数据是一行行的，并不知道属于哪个表。希望在记日志时对每一行日志加前缀
+   > 由于来的数据是一行行的，并不知道属于哪个表。希望在记日志时对每一行日志的第一个数据单元做特殊处理
    >
-   > `fl-table:tablename:content`
+   > `fl-table:tablename,content`
 
 4. 最后一起提交，完成数据插入
 
 #### 目前还未完成的事情
-1. 目前只写了 数据库类型是 字符 类型的。需要完善 int、long、boolean等的类型处理
 2. 代码的严谨性需要在测试中完善
 
 #### 需要引用的jar包
@@ -30,6 +29,8 @@
 ```
 - 相应的jdbc，demo用的mariaDB
 	下载地址：https://downloads.mariadb.com/Connectors/java/connector-java-2.3.0/mariadb-java-client-2.3.0.jar
+- mysql-jdbc
+    下载地址：https://dev.mysql.com/downloads/connector/j/
 - yaml解析库
 	下载地址：https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar
 ```
@@ -38,3 +39,4 @@
 - [Flume-ng在windows环境搭建](https://blog.csdn.net/antgan/article/details/52087926)
 - [Flume自定义sink写入mysql](https://blog.csdn.net/u012373815/article/details/54098581)
 - [Windows Tail命令工具](https://www.jianshu.com/p/743964656bb4)
+- [基于flume-ng 1.4.0的TailSource程序开发](https://www.iteblog.com/archives/1034.html)

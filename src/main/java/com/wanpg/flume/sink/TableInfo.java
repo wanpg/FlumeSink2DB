@@ -48,8 +48,8 @@ public class TableInfo {
         }
         for (int i = 0; i < dataArray.length; i++) {
             String data = dataArray[i];
-            // TODO: 2018/9/10 此处需要处理不同类型设置参数
-            statement.setString(i + 1, data);
+            Column column = columns.get(i);
+            column.setValue(statement, data, i + 1);
         }
         statement.addBatch();
         return true;

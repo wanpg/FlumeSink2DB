@@ -1,3 +1,15 @@
+# ## example ##
+#
+#
+# tableConfig: ## 表配置
+#    - tableName: mysqltest ## 表名
+#      columns: ## 列信息
+#          - name: content ## 列名
+#            type: string ## 类型，可以是 string,short,int,long,float,double,byte,boolean
+#
+#          - name: create_by
+#            type: string
+
 tableConfig:
     - tableName: mysqltest
       columns:
@@ -5,7 +17,7 @@ tableConfig:
             type: string
 
           - name: create_by
-            type: string
+            type: long
 
     - tableName: mysqltest-user
       columns:
