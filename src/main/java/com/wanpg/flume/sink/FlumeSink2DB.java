@@ -294,6 +294,6 @@ public class FlumeSink2DB extends AbstractSink implements Configurable {
         instance.set(Calendar.MINUTE, 0);
         instance.set(Calendar.SECOND, 0);
         // 添加一小时
-        return instance.getTimeInMillis() + 60 * 60 + 1000;
+        return instance.getTimeInMillis() + 60 * 60 * 1000;
     }
 }

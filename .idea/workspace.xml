@@ -7,15 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cd8fdc4-eb90-4896-81ff-f7a329d036b1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanpg/flume/sink/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlumeSink2DB.conf" beforeDir="false" afterPath="$PROJECT_DIR$/FlumeSink2DB.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_table_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/db_table_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanpg/flume/sink/Column.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanpg/flume/sink/Column.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wanpg/flume/sink/FlumeSink2DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanpg/flume/sink/FlumeSink2DB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanpg/flume/sink/TableInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanpg/flume/sink/TableInfo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -57,35 +50,13 @@
       <file leaf-file-name="FlumeSink2DB.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wanpg/flume/sink/FlumeSink2DB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2749">
-              <caret line="284" column="14" lean-forward="true" selection-start-line="284" selection-start-column="14" selection-end-line="284" selection-end-column="14" />
+            <state relative-caret-position="5274">
+              <caret line="293" column="41" selection-start-line="293" selection-start-column="41" selection-end-line="293" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#8905#8906#0" expanded="true" />
-                <element signature="e#8945#8946#0" expanded="true" />
+                <element signature="e#9338#9339#0" expanded="true" />
+                <element signature="e#9378#9379#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Date.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/util/Date.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="163" column="11" selection-start-line="163" selection-start-column="11" selection-end-line="163" selection-end-column="11" />
-              <folding>
-                <element signature="e#6390#6391#0" expanded="true" />
-                <element signature="e#6438#6439#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Calendar.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/util/Calendar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6307">
-              <caret line="840" column="34" selection-start-line="840" selection-start-column="28" selection-end-line="840" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -95,51 +66,9 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="432">
-                <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+                <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wanpg/flume/sink/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TableConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wanpg/flume/sink/TableConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TableInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wanpg/flume/sink/TableInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="743">
-              <caret line="54" column="20" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="54" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db_table_config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db_table_config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -147,17 +76,17 @@
       <file leaf-file-name="FlumeSink2DB.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FlumeSink2DB.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+            <state relative-caret-position="198">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Info.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wanpg/flume/sink/Info.java">
+      <file leaf-file-name="db_table_config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db_table_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            <state relative-caret-position="432">
+              <caret line="24" column="24" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -616,19 +545,6 @@
               <item name="FlumeSink2DB" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlumeSink2DB" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlumeSink2DB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlumeSink2DB" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="FlumeSink2DB_jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlumeSink2DB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlumeSink2DB" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
               <item name="production" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -792,12 +708,12 @@
       <workItem from="1536497710360" duration="3625000" />
       <workItem from="1536504144556" duration="9897000" />
       <workItem from="1536589825242" duration="6154000" />
-      <workItem from="1536907202517" duration="15511000" />
+      <workItem from="1536907202517" duration="18524000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46527000" />
+    <option name="totallyTimeSpent" value="49540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-388" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -1014,20 +930,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db_table_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FlumeSink2DB.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wanpg/flume/sink/TableConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1042,16 +944,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="432">
-            <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1073,14 +965,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FlumeSink2DB.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_table_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="432">
+            <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wanpg/flume/sink/FlumeSink2DB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2749">
-          <caret line="284" column="14" lean-forward="true" selection-start-line="284" selection-start-column="14" selection-end-line="284" selection-end-column="14" />
+        <state relative-caret-position="5274">
+          <caret line="293" column="41" selection-start-line="293" selection-start-column="41" selection-end-line="293" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8905#8906#0" expanded="true" />
-            <element signature="e#8945#8946#0" expanded="true" />
+            <element signature="e#9338#9339#0" expanded="true" />
+            <element signature="e#9378#9379#0" expanded="true" />
           </folding>
         </state>
       </provider>
